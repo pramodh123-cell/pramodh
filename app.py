@@ -1,9 +1,12 @@
-
+ 
+ import os
+ Active_Key = = os.getenv('Active_Key')
+Username = = os.getenv('Username')
+bot_token = os.getenv('bot_token')
 from telegram.ext import Updater, MessageHandler, Filters
  
 from Adafruit_IO import Client
-aio = Client('Pramodhreddyreddy','aio_IZNN310LDKBp8XHN9ZCmjTRsCipi')
- 
+aio = Client(Username,Active_key)
  
 def pramodh1(bot,update):
   chat_id = bot.message.chat_id
@@ -39,7 +42,7 @@ def main(bot,update):
     pramodh4(bot,update) 
      
  
-bot_token = '1963401133:AAFMhkrJ7PQF0Fy99furV6dt4AStWMtMRwI'
+bot_token = bot_token
 u = Updater(bot_token,use_context=True)
 dp = u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
