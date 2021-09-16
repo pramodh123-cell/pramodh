@@ -2,7 +2,7 @@
 from telegram.ext import Updater, MessageHandler, Filters
  
 from Adafruit_IO import Client
-aio = Client('Pramodhreddyreddy','aio_hlfg38GJetkuohFWSHAH991X5PSY')
+aio = Client('Pramodhreddyreddy','aio_BfUr24vDa9RKswmAWt7Kx8csYoZY')
  
  
 def pramodh1(bot,update):
